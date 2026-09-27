@@ -1,0 +1,5 @@
+package com.vectasheet.entity;
+
+public enum ActivityAction {
+    CREATED, EDITED, DELETED, MOVED, SHARED, COMMENTED, ASSIGNED, COMPLETED, RESTORED, IMPORTED, EXPORTED, JOINED
+}

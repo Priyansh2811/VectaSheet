@@ -1,0 +1,37 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: vectasheet-backend
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/vectasheet?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&createDatabaseIfNotExist=true
+    username: root
+    password: 0808
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: ${DDL_AUTO:update}
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+    open-in-view: false
+
+  jackson:
+    default-property-inclusion: non_null
+
+vectasheet:
+  jwt:
+    secret: ${JWT_SECRET:change-this-super-secret-key-in-production-minimum-32-chars}
+    access-token-ttl-minutes: ${JWT_ACCESS_TTL_MINUTES:15}
+  cors:
+    allowed-origin: ${FRONTEND_URL:http://localhost:5173}
+
+logging:
+  level:
+    com.vectasheet: INFO
+    org.springframework.security: WARN
