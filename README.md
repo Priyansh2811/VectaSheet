@@ -105,7 +105,7 @@ CREATE DATABASE IF NOT EXISTS vectasheet;
 ```
 (Alternatively, use Docker: docker compose up -d)
 
-3. Backend (Port 8080)
+### 3. Backend (Port 8080)
 In your first terminal:
 
 ```bash
@@ -114,7 +114,7 @@ mvn clean install -DskipTests
 mvn spring-boot:run
 ```
 
-4. Frontend (Port 5173)
+### 4. Frontend (Port 5173)
 In your second terminal:
 
 ```bash
@@ -123,6 +123,7 @@ npm install
 npm run dev
 ```
 
-5. Open in browser
+### 5. Open in browser
+
 Navigate to http://localhost:5173
 
