@@ -92,6 +92,6 @@ vectasheet/
 
 ### 1. Clone the repository
 
-```powershell
-git clone [https://github.com/Priyansh2811/VectaSheet.git](https://github.com/Priyansh2811/VectaSheet.git)
+```bash
+git clone https://github.com/Priyansh2811/VectaSheet.git
 cd vectasheet
