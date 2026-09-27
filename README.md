@@ -121,5 +121,8 @@ In your second terminal:
 cd frontend
 npm install
 npm run dev
+```
+
 5. Open in browser
-Navigate to http://localhost:5173 and sign up or log in.
+Navigate to http://localhost:5173
+
