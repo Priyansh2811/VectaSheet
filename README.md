@@ -95,3 +95,31 @@ vectasheet/
 ```bash
 git clone https://github.com/Priyansh2811/VectaSheet.git
 cd vectasheet
+```
+
+### 2. Database Setup
+Ensure MySQL Server is running locally on port 3306 and create the schema:
+```bash
+# SQL
+CREATE DATABASE IF NOT EXISTS vectasheet;
+```
+(Alternatively, use Docker: docker compose up -d)
+
+3. Backend (Port 8080)
+In your first terminal:
+
+```bash
+cd backend
+mvn clean install -DskipTests
+mvn spring-boot:run
+```
+
+4. Frontend (Port 5173)
+In your second terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+5. Open in browser
+Navigate to http://localhost:5173 and sign up or log in.
